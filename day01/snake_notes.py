@@ -12,15 +12,19 @@ pygame.display.set_caption("~~SNEKE~~")
 
 # Set FSP and clock
 # TODO: make a variable (constant) called FPS and initialize to 20
+FPS = 20
 clock = pygame.time.Clock()
 
 # Set game values
 # TODO: make a variable (constant) named SNAKE_SIZE and initialize to 20
+SNAKE_SIZE = 20
 
 # TODO: make a variable named head_x and assign half of the WINDOW_WIDTH to it.  use integer division //  (i.e. 11 / 2 is 5.5,  11//2 is 5)
+head_x = WINDOW_WIDTH / 2
 # TODO: make a variable named head_y and assign half of the WINDOW_HEIGHT + 100 to it.  use integer division //
-
+head_y = WINDOW_HEIGHT / 2
 # TODO: make a variable named snake_dx and assign 0 to it.
+snake_dx = 0
 # TODO: repeat for a variable named snake_dy
 
 # TODO: make a variable named score and assign 0 to it.
