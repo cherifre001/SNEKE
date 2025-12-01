@@ -1,5 +1,7 @@
 import pygame, random
 
+from day05.snake import SNAKE_SIZE
+
 # Initialize pygame
 pygame.init()
 
@@ -82,6 +84,7 @@ while running:
                 # Inside the block of the K_LEFT if statement
                 # TODO: assign -1 * SNAKE_SIZE 'TO' snake_dx.  This moves the snake 1 SNAKE_SIZE to the left.
                 # TODO: assign 0 'TO' snake_dy.  We may have been moving up or down.  This cancels that movement out.
+
             # TODO: check if the event.key is pygame.K_RIGHT.
                 # Inside the block of the K_RIGHT if statement.
                 # TODO: assign SNAKE_SIZE 'TO' snake_dx.  This moves the snake 1 SNAKE_SIZE to the right.
@@ -99,6 +102,7 @@ while running:
     # Add the head coordinate to the first index of the body coordinate list
     # This will essentially move all the snakes body by one position in the list
     # TODO: call body_coords's insert function passing in the index (0) and head_coord
+
     # TODO: call body_coords's pop function passing in no arguments.
 
     # Update the x,y position of the snakes head and make a new coordinate
@@ -197,6 +201,7 @@ while running:
 
     # Update display and tick clock
     # TODO: Read below. 2 TODO's, require's explanation
+
     '''
     1. Now we update the display by calling pygame.display's update function passing in no arguments.
     
